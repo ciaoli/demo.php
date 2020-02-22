@@ -3,19 +3,22 @@
 $a = 3;
 $b = 7;
 echo $a + $b;
-
+echo "\n";
 
 $array_month = ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
 echo $array_month[7];
+echo "\n";
 
-$hello = "Hello,";
-$name = "Shoya's World!";
-echo $hello;
-echo $name;
+$hello = "Hello, ";
+$name = "Shoya";
+$world = "'s World!";
+echo $hello . $name . $world;
+echo "\n";
 
 $tech_boost = "tech";
 $tech_boost .= "_boost";
 echo $tech_boost;
+echo "\n";
 
 $calendar = [
   "January" => "1月",
@@ -34,15 +37,4 @@ $calendar = [
 
 // 12月を表示する
 echo $calendar["December"];
-
-$height = 160;
-// もし $height が 150 未満の数値なら、 ifのあとの { } の中のコードが実行される
-// それ以外なら、 else のあとの　｛ ｝ の中のコードが実行される
-
-if ($height < 150) {
-  echo "150cm 未満の方はご乗車できません。";
-} else {
-  echo "ご乗車になれます。";
-}
-
-//=> "ご乗車になれます。" が表示される。
+echo "\n";
