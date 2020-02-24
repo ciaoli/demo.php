@@ -21,10 +21,18 @@ echo sum($a, $b);
 echo "\n";
 
 //3.$arr という配列の仮引数を持ち、数値が入った配列array(1, 3, 5 ,7, 9) を渡すとその要素をすべてかけた結果を返す関数を作成してください。
-  
+
 $arr = array(1,3,5,7,9);
 
-echo  array_product($arr) ."\n";
+function total_product($arr){
+    $total = 1;
+    foreach ($arr as $item) {
+        $total *= $item;
+    }
+    return $total;
+}
+
+echo  total_product($arr) ."\n";
 
 //4.【応用】　次のプログラムは、配列の中で一番大きい値を返す max_array という関数を実装しようとしています。途中の部分を完成させてください。
   
